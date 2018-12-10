@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+xmlns:b="http://bootsfaces.net/ui">
+  <h:head>
+    <title>JSF 2.3 - h:form demo showing how style and styleClass are rendered (or not)</title>
+  </h:head>
+  <h:body>
+    <h1>JSF 2.3 - h:form demo showing how style and styleClass are rendered (or not)</h1>
+    <style>
+    	.black-background {
+    		background-color: black;
+    	}
+    </style>
+    <h2>MyFaces version</h2>
+    <h:form style="color:red" class="black-background">
+    If this text is red on a black background, the attributes "style" and "styleClass" have been rendered. If it's black-on-white, Stephan is still chasing the bug (or you're using a BootsFaces version that doesn't contain the bug fix yet).
+    </h:form>
+    <h2>BootsFaces version</h2>
+    <b:form style="color:red" class="black-background">
+    If this text is red on a black background, the attributes "style" and "styleClass" have been rendered. If it's black-on-white, Stephan is still chasing the bug (or you're using a BootsFaces version that doesn't contain the bug fix yet).
+    </b:form>
+  </h:body>
+</html>
